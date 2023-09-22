@@ -1,12 +1,12 @@
 
 function handleGetFormData() {
-  const name = document.getElementById("name").value;
-  const city = document.getElementById("city").value;
-  const email = document.getElementById("email").value;
-  const zipCode = document.getElementById("zip-code").value;
-  const status = document.getElementById("status").checked;
+  let name = document.getElementById("name").value;
+  let city = document.getElementById("city").value;
+  let email = document.getElementById("email").value;
+  let zipCode = document.getElementById("zip-code").value;
+  let status = document.getElementById("status").checked;
 
-  const formData = {
+  let formData = {
       name: name,
       city: city,
       email: email,
@@ -18,35 +18,35 @@ function handleGetFormData() {
 
 }
 
-function isNumber(input) {
-  return !isNaN(input);
-}
+function isNumber(inputUser){
+  return !isNaN(inputUser);
+};
 
-function checkboxIsChecked() {
-  const status = document.getElementById("status");
-  return status.checked;
-}
+function checkboxIsChecked(){
+  return document.getElementById("status").checked;
+};
 
-function validateFormData(formData) {
-  if (formData.name !== '' && formData.city !== '' && formData.email !== '' && isNumber(formData.zipCode) && checkboxIsChecked(formData)) {
-      console.log('Data Form Valid');
+function validateFormData(formData){
+  if(formData.name !== '' && formData.city !== '' && formData.email !== '' && isNumber(formData.zipCode) && checkboxIsChecked(formData)) {
+      console.log("Seluruh Form telah berhasil terisi.");
       return true;
-  } else {
-      console.log('Data Form Tidak Valid');
+  }else {
+      console.log("Seluruh Form tidak terisi.");
       return false;
   }
-}
+};
 
-function submit() {
-  const formData = handleGetFormData();
-  if (validateFormData(formData)) {
-      document.getElementById('warning').textContent = "Data Form Berhasil Terkirim";
-  } else {
-      document.getElementById('warning').textContent = "Lengkapi Pengisian Data Form";
+function submit(){
+  let formData = handleGetFormData();
+
+  if(validateFormData(formData)){
+      document.getElementById("warning").textContent = "";
+  }else{
+      document.getElementById("warning").textContent = "Periksa form anda sekali lagi";
   }
-}
+};
 
-const myForm = document.getElementById("myForm").addEventListener("submit", event => {
+document.querySelector('form').addEventListener("submit", event => {
   event.preventDefault();
   submit();
-})
+});
