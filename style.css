@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: linear-gradient(146deg, rgba(25, 156, 212, 0.67) 0%, rgba(25, 212, 155.90, 0.31) 100%); 
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul{
+  list-style: none;
+  gap: 20px;
+  margin-right: 100px;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  /* font-weight: bold; */
+}
+
+li a:hover {
+  cursor: pointer;
+  border-bottom: 3px solid rgb(131, 134, 159);
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.log-btn{
+  background-color: white;
+  color: #21A9CF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.daf-btn{
+  background-color: #21A9CF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+.log-btn:hover, .daf-btn:hover{
+  cursor: pointer;
+  border-bottom: 3px solid rgb(131, 134, 159);
+}
+
+main{
+  background: linear-gradient(146deg, rgba(25, 156, 212, 0.67) 0%, rgba(25, 212, 155.90, 0.31) 100%);
+  padding: 10px;
+}
+
+#hero {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+#hero-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #454040;
+}
+
+#hero-text span {
+  color: #1EA0D1;
+}
+
+#hero-text p {
+  color: #454040;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: justify;
+}
+
+#hero-img{
+  padding: 40px;
+}
+
+.cta{
+  background-color: #21A9CF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 40px;
+}
+
+content{
+  margin: 80px 40px;
+  padding: 40px;
+  text-align: center;
+}
+
+.content-text{
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 63px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+
+.content-gabungan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  color: black;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.form-text{
+  margin: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px; 
+}
+
+form input {
+  padding: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+input[type="text"],
+input[type="city"],
+input[type="email"],
+input[type="number"] {
+  width: 100%; 
+  max-width: 750px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+}
+
+#check {
+  margin-left: 10px; 
+}
+
+#submit-form {
+  background-color: #21A9CF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 100%; 
+  max-width: 775px;
+  cursor: pointer;
+}
+
+#warning {
+  color: red;
+  margin-left: 40px;
+}
+
+footer {
+  margin-top: 80px;
+  background: linear-gradient(146deg, rgba(25, 156, 212, 0.67) 0%, rgba(25, 212, 155.90, 0.31) 100%); 
+  color: black;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.footer-section h5 {
+  font-size: 14px;
+  
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+  color: black;
+  text-decoration: none;
+}
