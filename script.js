@@ -46,7 +46,7 @@ function submit() {
   }
 }
 
-document.querySelector('form').addEventListener("submit", event => {
+const myForm = document.getElementById("myForm").addEventListener("submit", event => {
   event.preventDefault();
   submit();
 })
